@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Calibri", sans-serif,
+  FreeSerif, serif !default;
+
+// colors
+$body-bg: #fff;
+$body-color: #000 !default;
+$link-color: #45a9ee !default;
+$selection-bg: #000 !default;
+$code-color: #7ab51e !default;
+
+// headings
+$presentation-heading-font: "Calibri", sans-serif,
+  FreeSerif, serif !default;
+$presentation-heading-color: #006ab2 !default;
+$presentation-title-slide-text-align: left;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+.title {
+  font-size: 90px !important;
+  color: #fff !important;
+}
+
+.subtitle {
+  color: #fff !important;
+}
+
+.quarto-title-author-name {
+  color: #fff !important;
+  text-align: left;
+}
+
+#title-slide {
+  text-align: left;
+
+  .quarto-title-authors {
+    justify-content: left;
+  
+    .quarto-title-author { // optional, test it for yourself
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+.reveal .slides {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.reveal .slide-logo {
+  max-height: 3rem !important;
+  bottom: -2px;
+  right: 10px;
+}

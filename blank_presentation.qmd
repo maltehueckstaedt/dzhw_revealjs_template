@@ -1,0 +1,38 @@
+---
+title: "Title"
+
+subtitle: "Sub-<br>title"
+title-slide-attributes:
+  data-background-image: images/Deckblatt.png
+# width: 3000
+# hight: 1688
+author: "Author Name"
+bibliography: bibliography.bib
+format:
+  revealjs:
+    theme: custom.scss
+    incremental: false #stufenweise Bulletpoints einblenden 
+    citations-hover: true
+    citeproc: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    slide-number: true
+    footer: Malte Hückstädt | 25.04.2023 | Macht im Feld der Kunsthochschul-professor*innen
+    include-after-body: clean_title_page.html
+editor: visual
+logo: images/DZHW_Logo.png
+#server: shiny
+include-in-header: 
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
+---
+
+# Headline 
+## Kunstakademien 
+
+fgd
