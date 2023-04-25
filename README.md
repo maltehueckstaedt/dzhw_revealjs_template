@@ -38,11 +38,12 @@ use the template.
 [✓] Copying files...
 
 Files created:
- - quarto-rladies-theme.Rproj
  - LICENSE.md
+ - test2.qmd
  - index.html
  - images
- - talk.qmd
+ - quarto-dzhw-theme.Rproj
+ - actors.js
  - _extensions
  - clean_title_page.html
  - template.html
