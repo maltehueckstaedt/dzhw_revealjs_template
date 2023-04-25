@@ -1,5 +1,6 @@
 # DZHW Quarto Revealjs Theme
-You can create Revealjs presentations using the revealjs format. The best way to get a sense for the capabilities of Revealjs is this demo presentation:
+You can create [Quarto Presentations](https://quarto.org/docs/presentations/) with the [Revealjs](https://quarto.org/docs/presentations/revealjs/) format in the applicable DZHW style. The best way to get a feel for the possibilities of Revealjs is to watch this demo presentation:
+
 https://maltehueckstaedt.github.io/dzhw_revealjs_template/
 
 ## How to install
