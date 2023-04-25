@@ -357,6 +357,8 @@ You can cite in all the usual ways:
 >
 > ...stars are rare [@adlerStardomTalent1985] and beautiful [@batailleVisualArtistsProfessional2020; @adlerStardomTalent1985]
 
+**Note:** Hover over the citations to see a preview of the full references!
+
 ## Preview Links
 
 Navigate to hyperlinks without disrupting the flow of your presentation.
