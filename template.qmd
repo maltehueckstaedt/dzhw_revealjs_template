@@ -236,6 +236,8 @@ You can also use the following as a slide background:
 
 -   An iframe: `background-iframe`
 
+## {background-video="local-video.mp4" background-video-loop="true"}
+
 ## Absolute Position
 
 Position images or other elements at precise locations
@@ -414,3 +416,7 @@ RStudio includes an integrated presentation preview pane
 -   [Footer & Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo) (optionally specify custom footer per-slide)
 -   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
 -   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
+
+## References
+
+
