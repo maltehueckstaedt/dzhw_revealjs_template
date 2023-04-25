@@ -8,7 +8,7 @@ https://maltehueckstaedt.github.io/dzhw_revealjs_template/
 The DZHW-[Quarto](https://quarto.org)-Theme can be installed using the following command:
 
 ``` bash
-quarto install extension maltehueckstaedt/dzhw_revealjs_template`
+quarto install extension maltehueckstaedt/dzhw_revealjs_template
 ```
 If you are unable to install Quarto extensions, you probably should [update Quarto](https://quarto.org/docs/get-started/).
 
