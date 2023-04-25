@@ -321,6 +321,31 @@ leaflet() %>%
   addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
 ```
 
+## Interactive Slides {.smaller transition="slide"}
+
+Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.
+
+```{r}
+ojs_define(actors = data.frame(
+  x = rnorm(100),
+  y = rnorm(100)
+))
+```
+
+```{ojs}
+//| panel: sidebar
+viewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: "talent weight" })
+viewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: "looks weight" })
+viewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: "min fame" })
+```
+
+```{ojs}
+//| panel: fill
+import { plotActors } from './actors.js';
+plotActors(actors, talentWeight, looksWeight, minimum)
+```
+
+
 ## Preview Links
 
 Navigate to hyperlinks without disrupting the flow of your presentation.
