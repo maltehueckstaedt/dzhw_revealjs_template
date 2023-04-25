@@ -1,0 +1,179 @@
+---
+title: "Quarto DZHW Theme"
+subtitle: "Inspired in the [xaringan theme](https://www.apreshill.com/slides/rladies-demo-slides.html) made by [Alison Hill](https://www.apreshill.com/) "
+author: "Malte Hückstädt"
+bibliography: bibliography.bib
+title-slide-attributes:
+  data-background-image: images/Deckblatt.png
+format: 
+  rladies-revealjs:
+    footer: "[DZHW](https://www.dzhw.eu//) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
+incremental: false
+embed-resources: true
+include-after-body: clean_title_page.html
+include-in-header: 
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
+include-after: |
+  <script type="text/javascript">
+    Reveal.on('ready', event => {
+      if (event.indexh === 0) {
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+    });
+    Reveal.addEventListener('slidechanged', (event) => {
+      if (event.indexh === 0) {
+        Reveal.configure({ slideNumber: 'c' });
+        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      }
+      if (event.indexh === 1) { 
+        Reveal.configure({ slideNumber: 'c' });
+        document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+      }
+    });
+  </script>
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation.
+To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+> This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+> This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
+You can embed code like this:
+
+```{r}
+#| echo: true
+1 + 1
+```
+
+> This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+You can also add `text marked as code`!
+
+# New topic! {background-color="#562457"}
+
+To make a slide like this, use:
+
+    # Title of slide {background-color="#562457"}
+
+## Tabset example
+
+::: panel-tabset
+## Example 1
+
+Content here for tabset 1 :)
+
+## Example 2
+
+More content here, for tabset 2 :)
+:::
+
+## Incremental content
+
+Hi! 
+
+. . .
+
+
+Use `. . .` to separate content as an incremental slide!
+
+
+## You can add R code
+
+```{r}
+#| echo: true
+library(dplyr)
+library(ggplot2)
+g <- starwars |> 
+  ggplot() +
+  geom_point(aes(x = height, y = mass)) +
+  theme_light()
+```
+
+## And show the results aswell :)
+
+```{r}
+#| fig.align: center
+#| echo: true
+g 
+```
+
+## What about tables? {.smaller}
+
+### `knitr::kable()`
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| label: kable-ex
+#| echo: true
+#| eval: false
+tab <- starwars |>
+  tidyr::drop_na(species) |> 
+  group_by(species) |>
+  summarise(
+    n = n(),
+    mean_heigth = round(mean(height, na.rm = TRUE)),
+    mean_mass = round(mean(mass, na.rm = TRUE))
+  ) |> 
+  slice_max(order_by = n, n = 4) 
+
+knitr::kable(tab)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: kable-ex
+#| eval: true
+```
+:::
+:::
+
+## `DT::datatable()` {.smaller}
+
+With the `smaller` class in the slide!
+Ex: `## slide name {.smaller}`
+
+```{r}
+DT::datatable(tab, options = list(pageLength = 5))
+```
+
+## `gt::gt()`
+
+```{r}
+gt::gt(tab)
+```
+
+## `reactable::reactable()`
+
+```{r}
+reactable::reactable(tab)
+```
+
+
+## Exporting into PDF
+
+You can use the function `pagedown::chrome_print()` to print the HTML version into a PDF!
+
+```r
+pagedown::chrome_print("path-to-file.html")
+```

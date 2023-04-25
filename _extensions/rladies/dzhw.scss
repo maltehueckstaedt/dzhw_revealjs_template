@@ -1,0 +1,187 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Calibri", sans-serif,
+  FreeSerif, serif !default;
+
+// colors
+$body-bg: #fff;
+$body-color: #000 !default;
+$link-color: #7ab51e !default;
+$selection-bg: #000 !default;
+$code-color: #7ab51e !default;
+
+// headings
+$presentation-heading-font: "Calibri", sans-serif,
+  FreeSerif, serif !default;
+$presentation-heading-color: #006ab2 !default;
+$presentation-title-slide-text-align: left;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+/*||||||||||||||||||||||||||*/
+/* DECKBLATT*/
+/*||||||||||||||||||||||||||*/
+
+.title {
+  font-size: 90px !important;
+  color: #fff !important;
+}
+
+.subtitle {
+  color: #fff !important;
+}
+
+.quarto-title-author-name {
+  color: #fff !important;
+  text-align: left;
+}
+
+#title-slide {
+  text-align: left;
+
+  .quarto-title-authors {
+    justify-content: left;
+  
+    .quarto-title-author { // optional, test it for yourself
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+/*||||||||||||||||||||||||||*/
+/* POSITION FOLIENINHALTE*/
+/*||||||||||||||||||||||||||*/
+
+.reveal .slides {
+  text-align: left;
+  margin-left: 45px; //abstand von recht
+}
+
+/*||||||||||||||||||||||||||*/
+/* DZHW-LOGO*/
+/*||||||||||||||||||||||||||*/
+
+.reveal .slide-logo {
+  position: relative;
+  width: 10vw;
+  bottom: 5px !important;
+  left: 80px !important;
+  z-index: 50;
+  max-height: 3vh !important;
+}
+
+/*||||||||||||||||||||||||||*/
+/* BACKROUND*/
+/*||||||||||||||||||||||||||*/
+
+$color1: #7ab51d;
+$color2: #f2f2f2;
+$color3: #ffffff;
+$block-size: 1%;
+
+.reveal .slide-background {
+  background: $color1;
+}
+
+.reveal .slide-background {
+  background: $color1;
+  background:
+    linear-gradient(to right, $color1 0%, $color1 $block-size, $color2 $block-size, $color2 (12 * $block-size), $color3 (2 * $block-size), $color3 100%);
+}
+
+/*||||||||||||||||||||||||||*/
+/* FOLIENNUMMERN*/
+/*||||||||||||||||||||||||||*/
+
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 14px !important;
+  right: 50px !important;
+  top: unset !important;
+color: #969696 !important;
+  font-size: 50px;
+}
+
+/* je nach screensize variabel*/
+
+@media screen and (max-width: 768px) {
+.slide-number, .reveal.has-logo .slide-number {
+font-size: .5rem !important;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.slide-number, .reveal.has-logo .slide-number {
+font-size: 1rem !important;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.slide-number, .reveal.has-logo .slide-number {
+font-size: 1.5rem !important;
+}
+}
+
+/*||||||||||||||||||||||||||*/
+/* BULLETPOINTS*/
+/*||||||||||||||||||||||||||*/
+
+ul li::marker {
+  color: #7ab51e; /* ändern Sie "red" auf die gewünschte Farbe */
+}
+
+ul ul li::marker {
+  color: #f69f23; /* ändern Sie "red" auf die gewünschte Farbe */
+}
+
+ul ul ul li::marker {
+  content: "\25a0"; /* gefüllter Kreis */
+  color: #0d7d94; /* ändern Sie "red" auf die gewünschte Farbe */
+}
+
+
+/*||||||||||||||||||||||||||*/
+/* MENU-BUTTON*/
+/*||||||||||||||||||||||||||*/
+
+.reveal .slide-menu-button {
+  left: 40px !important;
+  top: 5px !important;
+  color: #fff !important; 
+}
+
+/*||||||||||||||||||||||||||*/
+/* FOOTER*/
+/*||||||||||||||||||||||||||*/
+
+.reveal .footer {
+    font-size: 24px !important;
+    bottom: 12px;
+    color: #969696 !important;
+}
+
+/* je nach screensize variabel*/
+
+@media screen and (max-width: 768px) {
+.reveal .footer, .reveal.has-logo .reveal .footer {
+font-size: .5rem !important;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.reveal .footer, .reveal.has-logo .reveal .footer {
+font-size: 1rem !important;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.reveal .footer, .reveal.has-logo .reveal .footer {
+font-size: 1.5rem !important;
+}
+}
