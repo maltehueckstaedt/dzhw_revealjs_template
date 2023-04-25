@@ -1,13 +1,13 @@
 ---
 title: "Quarto DZHW Theme"
-subtitle: "Inspired in the [xaringan theme](https://www.apreshill.com/slides/rladies-demo-slides.html) made by [Alison Hill](https://www.apreshill.com/) "
+subtitle: "Inspired in the [xaringan theme](https://www.dzhw.eu/) made by [Alison Hill](https://www.apreshill.com/) "
 author: "Malte Hückstädt"
 bibliography: bibliography.bib
 title-slide-attributes:
   data-background-image: images/Deckblatt.png
 format: 
-  rladies-revealjs:
-    footer: "[DZHW](https://www.dzhw.eu//) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
+  dzhw-revealjs:
+    footer: "[DZHW](https://www.dzhw.eu/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/maltehueckstaedt/dzhw_revealjs_template)."
 incremental: false
 embed-resources: true
 include-after-body: clean_title_page.html
