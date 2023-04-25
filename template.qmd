@@ -3,6 +3,7 @@ title: "Quarto DZHW<br>Theme"
 subtitle: "Inspired in the [rladies theme](https://beatrizmilz.github.io/quarto-rladies-theme/#/title-slide) made by <br> [Malte Hückstädt](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=839)" 
 author: ""
 bibliography: bibliography.bib
+csl: apa.csl
 title-slide-attributes:
   data-background-image: images/Deckblatt.png
 format: 
@@ -44,8 +45,9 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 
 -   Presenting code and LaTeX equations
 -   Including computations in slide output
--   Image, video, and iframe backgrounds
+-   Image and video backgrounds
 -   Fancy transitions and animations
+-   Citing
 -   Printing to PDF
 
 ...and much more
@@ -236,7 +238,7 @@ You can also use the following as a slide background:
 
 -   An iframe: `background-iframe`
 
-## {background-video="local-video.mp4" background-video-loop="true"}
+##  {background-video="local-video.mp4" background-video-loop="true"}
 
 ## Absolute Position
 
@@ -283,7 +285,7 @@ Automatically animate matching elements across slides with Auto-Animate.
 The next few slides will transition using the `slide` transition
 
 | Transition | Description                                                            |
-|---------------|---------------------------------------------------------|
+|-----------------|-------------------------------------------------------|
 | `none`     | No transition (default, switch instantly)                              |
 | `fade`     | Cross fade                                                             |
 | `slide`    | Slide horizontally                                                     |
@@ -347,6 +349,13 @@ import { plotActors } from './actors.js';
 plotActors(actors, talentWeight, looksWeight, minimum)
 ```
 
+## Citing
+
+You can cite in all the usual ways:
+
+> Adler [-@adlerStardomTalent1985] found...
+>
+> ...stars are rare [@adlerStardomTalent1985] and beautiful [@batailleVisualArtistsProfessional2020; @adlerStardomTalent1985]
 
 ## Preview Links
 
@@ -386,7 +395,7 @@ Press `s` (or use the presentation menu) to open speaker view
 
 ![](images/speaker-view.png){fig-align="center" style="border: 3px solid #dee2e6;" width="780"}
 
-:::notes
+::: notes
 Notes here!
 :::
 
@@ -418,5 +427,3 @@ RStudio includes an integrated presentation preview pane
 -   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
 
 ## References
-
-
