@@ -3,7 +3,7 @@ You can create Revealjs presentations using the revealjs format. The best way to
 
 ## How to install
 
-This [Quarto](https://quarto.org) extension can be installed using the following command:
+The DZHW-[Quarto](https://quarto.org)-Theme can be installed using the following command:
 
 ``` bash
 quarto install extension maltehueckstaedt/dzhw_revealjs_template`
