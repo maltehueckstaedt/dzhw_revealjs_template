@@ -1,6 +1,6 @@
 ---
 title: "Quarto DZHW<br>Theme"
-subtitle: "Inspired in the [rladies theme](https://beatrizmilz.github.io/quarto-rladies-theme/#/title-slide) made by <br> [Malte Hückstädt](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=839)" 
+subtitle: "Inspired by the [rladies theme](https://beatrizmilz.github.io/quarto-rladies-theme/#/title-slide) made by <br> [Malte Hückstädt](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=839)" 
 author: ""
 bibliography: bibliography.bib
 csl: apa.csl
@@ -285,7 +285,7 @@ Automatically animate matching elements across slides with Auto-Animate.
 The next few slides will transition using the `slide` transition
 
 | Transition | Description                                                            |
-|-----------------|-------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | `none`     | No transition (default, switch instantly)                              |
 | `fade`     | Cross fade                                                             |
 | `slide`    | Slide horizontally                                                     |
