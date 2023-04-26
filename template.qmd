@@ -285,7 +285,7 @@ Automatically animate matching elements across slides with Auto-Animate.
 The next few slides will transition using the `slide` transition
 
 | Transition | Description                                                            |
-|------------------|------------------------------------------------------|
+|------------|------------------------------------------------------------------------|
 | `none`     | No transition (default, switch instantly)                              |
 | `fade`     | Cross fade                                                             |
 | `slide`    | Slide horizontally                                                     |
