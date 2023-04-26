@@ -8,6 +8,7 @@ title-slide-attributes:
   data-background-image: images/Deckblatt.png
 format:
   dzhw-revealjs:
+    logo: images/logo.png
     footer: "[DZHW](https://www.dzhw.eu/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/maltehueckstaedt/dzhw_revealjs_template)."
     self-contained: false
     incremental: false
