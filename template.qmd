@@ -47,7 +47,7 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 -   Including computations in slide output
 -   Image and video backgrounds
 -   Fancy transitions and animations
--   Citing
+-   Cite
 -   Printing to PDF
 
 ...and much more
@@ -424,8 +424,8 @@ RStudio includes an integrated presentation preview pane
 ## And More...
 
 -   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) optimized (presentations look great on mobile, swipe to navigate slides)
--   [Footer & Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo) (optionally specify custom footer per-slide)
 -   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
 -   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
+-   [Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard) (enables you to draw on a notes canvas on top of your slides and/or open up an empty chalkboard within your presentation) -\> coming soon
 
 ## References
