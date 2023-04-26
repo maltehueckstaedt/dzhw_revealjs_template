@@ -53,7 +53,7 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 -   Cite
 -   Printing to PDF
 
-...and much more
+...and much more 
 
 ## Pretty Code {auto-animate="true"}
 
