@@ -5,9 +5,7 @@ contributes:
   formats: 
     revealjs:
       logo: logo.png
-      footer: |
-        [R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html).
-        Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme).
+      footer: "[DZHW](https://www.dzhw.eu/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/maltehueckstaedt/dzhw_revealjs_template)."
       theme: dzhw.scss
       slide-number: c/t
       show-slide-number: all

@@ -104,7 +104,7 @@ $block-size: 1%;
   bottom: 14px !important;
   right: 50px !important;
   top: unset !important;
-color: #969696 !important;
+  color: #969696 !important;
   font-size: 50px;
 }
 
@@ -184,4 +184,13 @@ font-size: 1rem !important;
 .reveal .footer, .reveal.has-logo .reveal .footer {
 font-size: 1.5rem !important;
 }
+}
+
+/*||||||||||||||||||||||||||*/
+/* chalkboard*/
+/*||||||||||||||||||||||||||*/
+
+.reveal .slide-chalkboard-buttons.slide-menu-offset {
+  bottom: 45px !important;
+  left: 80px !important;
 }
