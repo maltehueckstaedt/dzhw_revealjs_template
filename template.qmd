@@ -1,6 +1,6 @@
 ---
 title: "Quarto DZHW<br>Theme"
-subtitle: "Based on the current DZHW theme made by <br> [Malte Hückstädt](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=839)" 
+subtitle: "Based on the current DZHW Theme <br> Made by [Malte Hückstädt](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=839)" 
 author: ""
 bibliography: bibliography.bib
 csl: apa.csl
