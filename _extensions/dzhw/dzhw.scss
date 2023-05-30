@@ -145,6 +145,13 @@ ul ul ul li::marker {
   color: #0d7d94; /* ändern Sie "red" auf die gewünschte Farbe */
 }
 
+/*||||||||||||||||||||||||||*/
+/* Geordnete Liste*/
+/*||||||||||||||||||||||||||*/
+
+::marker {
+  color: #7ab51e; /* Hier die gewünschte Farbe für die Zahlen der Liste angeben */
+}
 
 /*||||||||||||||||||||||||||*/
 /* MENU-BUTTON*/
